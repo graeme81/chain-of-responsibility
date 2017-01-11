@@ -1,0 +1,7 @@
+Chain of Command
+
+An interface is made which is linked to a chain of similar objects that expect similar data types to be input. If the first object cannot use this data it is sent to the next in the chain, until an object is able to use the data or the chain comes to an end.
+
+A good example I found was a calculator where the data of 2 numbers and a function is sent in to a chain consisting of ADD, SUBTRACT, MULTIPLY and DIVIDE. The objects would expect an input of (int, int, String). 
+
+If (4,2,"multiply") is sent, it is first checked by the first in the chain, add. As multiply does not equal add, the data is sent down the chain (to subtract) until multiply is found or the chain is ended.  
